@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        * { 
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333333;
+            text-align: center;
+            color: whitesmoke;
+            font-size: 32px;
+            height: 30vh;
+        }
+
+        footer p {
+            position: relative;    
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ddd;
+            height: 10vh;
+            align-items: center;
+        }
+
+        header button {
+            border: none;
+            font-size: 20px;
+            color: rgb(105, 103, 103);
+            background-color: #ddd;
+            font-weight: lighter;
+            letter-spacing: 5.5px;
+            padding: 0 25px;
+        }
+
+        .buttons button:hover {color: cadetblue;}
+
+        .main1 { 
+            background-color: rgb(2, 170, 114);
+            color: whitesmoke;
+            font-size: 32px;
+            height: 90vh;
+        }
+
+        .main1 img { 
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            padding: 40px;
+        }
+
+        .main1, .main2, .main3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main2 {
+            text-align: center;
+            font-size: 28px;
+            background-color: #333333;
+            height: 80vh;
+            color: whitesmoke;
+        }
+
+        .main2 p, .main2 h3, .main2 button {
+            margin: 0 100px;
+            margin-top: 50px;
+        }
+
+        .main2 h3 {
+            font-size: 40px;
+        }
+
+        .main2 button { 
+            padding: 20px 60px;
+            border-radius: 12px;
+            font-size: 24px;
+            color: black;
+        }
+
+        .main3 {
+            display: block;
+            text-align: center;
+            height: 80vh;
+            padding-top: 100px;
+        }
+
+        .main3 .cards{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* align-items: center; */
+        }
+
+        .card-1 { 
+            font-size: 20px;
+        }
+
+        .main3 img {
+            height: 400px;   
+            width: 500px;
+        }
+
+        /* @media only screen and (max-width: 720px) {
+            .main1, .main2, .main3 {
+                display: flex;
+                flex-direction: column;
+                height: 80vh;
+            }
+        } */
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <button>Me</button>
+        </div>
+        <div class="buttons">
+            <button>WHO</button>
+            <button>WHAT</button>
+            <button>WHERE</button>
+        </div>
+    </header>
+    <main>
+        <div class="main1">
+            <p>Who Am I?</p>
+            <img src="https://www.w3schools.com/bootstrap/bird.jpg" alt="">
+            <p>I'm an adventurer</p>
+        </div>
+        <div class="main2">
+            <h3>What Am I?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button> <span class="glyphicon glyphicon-search"></span> Search</button>
+        </div>
+        <div class="main3">             
+            <h2>Where to Find Me?</h2>
+            <div class="cards">
+                <div class="card-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>
+                        sed do eiusmod tempor incididunt ut labore et dolore <br>
+                        magna aliqua.
+                    </p>
+                    <img src="https://www.w3schools.com/bootstrap/birds1.jpg" alt="">
+                </div>
+                <div class="card-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>
+                        sed do eiusmod tempor incididunt ut labore et dolore <br>
+                        magna aliqua.
+                    </p>
+                    <img src="https://www.w3schools.com/bootstrap/birds2.jpg" alt="">
+                </div>
+                <div class="card-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>
+                        sed do eiusmod tempor incididunt ut labore et dolore <br>
+                        magna aliqua.
+                    </p>
+                    <img src="https://www.w3schools.com/bootstrap/birds3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Bootstrap Theme Made By <a href="www.w3schools.com">www.w3schools.com</a> </p>
+    </footer>
+</body>
+</html>
